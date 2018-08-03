@@ -9,7 +9,7 @@ using namespace std;
 class Code_07_rotateMatrix
 {
   public:
-    static void rotate(vector<vector<int> > arr)
+    static void rotate(vector<vector<int> > &arr)
     {
         int hang = arr.size();
         int lie = arr[0].size();
@@ -64,6 +64,7 @@ int main(int argc, char const *argv[])
     }
     Code_07_rotateMatrix::print(arr);
     Code_07_rotateMatrix::rotate(arr);
+    Code_07_rotateMatrix::print(arr);
     getchar();
     return 0;
 }
